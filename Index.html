@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Neex Creative — Creative Solutions for your business</title>
+  <meta name="description" content="Neex Creative — Creative Solutions for your business." />
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar será injetada aqui pelo navbar-loader.js -->
+  <div id="navbar"></div>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <div class="hero-inner">
+      <h1 class="headline">
+        <span class="highlight">Creative Solutions</span><br>
+        <span class="fade">for your business</span>
+      </h1>
+      <div class="hero-ctas">
+        <a href="#pricing" class="btn btn-red">Get Started →</a>
+        <a href="#projects" class="btn btn-light">View Projects</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about" id="about">
+    <div class="about-grid">
+      <!-- COLUNA ESQUERDA -->
+      <div class="about-left">
+        <h2 class="about-title">
+          We believe design is more than <span>visuals.</span><br>
+          It’s how your brand tells a story,<br>
+          <strong>builds trust, and grows revenue.</strong>
+        </h2>
+
+        <p class="about-desc">
+          Design, when done right, elevates brands beyond visuals it gives them a voice,
+          meaning, and power to connect deeply with their audience while growing trust and revenue.
+        </p>
+      </div>
+
+      <!-- COLUNA DIREITA -->
+      <div class="about-right">
+        <ul class="about-list">
+          <li>→ Brand strategy that builds long-term trust</li>
+          <li>→ Visual storytelling for meaningful brands</li>
+          <li>→ Digital experiences that convert and retain</li>
+          <li>→ Dedicated creative direction per project</li>
+          <li>→ Design sprints focused on measurable results</li>
+        </ul>
+
+        <div class="about-pricing">
+          <p>Projects start at</p>
+          <strong>€1,200/mo</strong>
+          <a href="#pricing" class="btn-pricing">View Pricing →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS / GALLERY ===== -->
+<section class="section" id="projects">
+  <div class="container">
+    <h2 class="section-title">Featured Projects</h2>
+
+    <div class="gallery-grid">
+      <!-- Card 1 -->
+      <a class="gallery-item" href="https://www.behance.net/gallery/239433721/Revival-Youth-Conference-2026" target="_blank" rel="noopener">
+        <img src="img/project-01.png" alt="Project 01">
+      </a>
+
+      <!-- Card 2 -->
+      <a class="gallery-item" href="https://www.behance.net/" target="_blank" rel="noopener">
+        <img src="img//project-02.png" alt="Project 02">
+      </a>
+
+      <!-- Card 3 -->
+      <a class="gallery-item" href="https://www.behance.net/gallery/157327841/Media-Kit-Irlandapontocom" target="_blank" rel="noopener">
+        <img src="img/project-03.png" alt="Project 03">
+      </a>
+
+      <!-- Card 4 -->
+      <a class="gallery-item" href="https://www.behance.net/gallery/162867255/Plaza-Car-Wash-(Brand-Guide)" target="_blank" rel="noopener">
+        <img src="img//project-04.png" alt="Project 04">
+
+        <!-- Card 5 -->
+      <a class="gallery-item" href="https://www.behance.net/gallery/239433721/Revival-Youth-Conference-2026" target="_blank" rel="noopener">
+        <img src="img/project-01.png" alt="Project 01">
+      </a>
+
+      <!-- Card 6 -->
+      <a class="gallery-item" href="https://www.behance.net/" target="_blank" rel="noopener">
+        <img src="img//project-02.png" alt="Project 02">
+      </a>
+
+      <!-- Card 7 -->
+      <a class="gallery-item" href="https://www.behance.net/gallery/157327841/Media-Kit-Irlandapontocom" target="_blank" rel="noopener">
+        <img src="img/project-03.png" alt="Project 03">
+      </a>
+
+      <!-- Card 8 -->
+      <a class="gallery-item" href="https://www.behance.net/gallery/162867255/Plaza-Car-Wash-(Brand-Guide)" target="_blank" rel="noopener">
+        <img src="img//project-04.png" alt="Project 04">
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ===== PRICING ===== -->
+  <section class="section" id="pricing">
+    <div class="container pricing-grid">
+      <div>
+        <h2 class="section-title">Our pricing is transparent</h2>
+        <p class="muted">Choose the plan that fits your business.</p>
+      </div>
+      <aside class="pricing-card">
+        <h3>Monthly Design Retainer</h3>
+        <ul>
+          <li>Ongoing design support</li>
+          <li>Weekly updates</li>
+          <li>Clear deliverables</li>
+        </ul>
+        <div class="price-tag">$2,400 / month</div>
+        <a class="btn btn-primary" href="book.html">Get Started →</a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="muted">
+        Send a message with what you need, and we’ll reply with next steps.
+      </p>
+      <!-- Se você quiser, depois a gente conecta isso com um form real -->
+      <a class="btn btn-light" href="book.html">Book a Call →</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container foot">
+      © <span id="year"></span> Neex Creative — All rights reserved.
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="navbar-loader.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

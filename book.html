@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book a Call — Neex Creative</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar será injetada aqui -->
+  <div id="navbar"></div>
+
+  <main>
+    <section class="section" style="text-align:center">
+      <h1 class="headline">Book a Call</h1>
+      <p class="hero-copy">Choose a time that works best for you below.</p>
+
+      <div style="margin-top:40px;display:flex;justify-content:center">
+        <!-- Substitua o src pelo link embed real do seu Calendly -->
+        <iframe
+          src="https://calendly.com/seuusuario/30min"
+          width="100%"
+          height="700"
+          frameborder="0">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <script src="navbar-loader.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
