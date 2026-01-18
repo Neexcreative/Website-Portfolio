@@ -11,22 +11,31 @@
   <!-- Navbar será injetada aqui -->
   <div id="navbar"></div>
 
-  <main>
-    <section class="section" style="text-align:center">
-      <h1 class="headline">Book a Call</h1>
-      <p class="hero-copy">Choose a time that works best for you below.</p>
+  <main class="book-hero">
+  <div class="book-wrap">
+    <header class="book-head">
+      <h1 class="book-title">Book a Call</h1>
+      <p class="book-sub">
+        Choose a time that works best for you. 15–20 minutes, straight to the point.
+      </p>
+    </header>
 
-      <div style="margin-top:40px;display:flex;justify-content:center">
-        <!-- Substitua o src pelo link embed real do seu Calendly -->
-        <iframe
-          src="https://calendly.com/seuusuario/30min"
-          width="100%"
-          height="700"
-          frameborder="0">
-        </iframe>
+    <!-- Placeholder do Calendly (depois a gente troca pelo embed) -->
+    <section class="book-card">
+      <div class="book-card-top">
+        <div class="book-badge">Availability</div>
+        <div class="book-note">Dublin / Remote • Reply 24–48h</div>
+      </div>
+
+      <div class="book-embed">
+        <div class="book-embed-placeholder">
+          Calendly will appear here.
+        </div>
       </div>
     </section>
-  </main>
+  </div>
+</main>
+
 
   <script src="navbar-loader.js"></script>
   <script src="script.js"></script>
