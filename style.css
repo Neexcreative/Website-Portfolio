@@ -1037,3 +1037,111 @@ footer{
 .section{ padding: 50px 0; }
 .about{ padding: 50px 0; }
 
+/* =========================================================
+   BOOK PAGE — premium layout
+   ========================================================= */
+
+.book-hero{
+  min-height: 100vh;
+  padding: 140px 0 90px;
+  background:
+    radial-gradient(900px 520px at 18% 12%, rgba(107,0,0,0.18), transparent 55%),
+    radial-gradient(760px 460px at 82% 18%, rgba(31,40,49,0.40), transparent 60%),
+    linear-gradient(180deg, #0e0f10 0%, #141414 55%, #0e0f10 100%);
+  color: #EFDFC5;
+  overflow: hidden;
+}
+
+.book-wrap{
+  width: min(1120px, 92vw);
+  margin: 0 auto;
+}
+
+.book-head{
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.book-title{
+  font-size: clamp(3rem, 6.5vw, 5.4rem);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  font-weight: 850;
+  margin: 0 0 14px;
+  color: rgba(239,223,197,0.95);
+}
+
+.book-sub{
+  max-width: 62ch;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: rgba(239,223,197,0.62);
+}
+
+.book-card{
+  margin-top: 26px;
+  border-radius: 26px;
+  border: 1px solid rgba(239,223,197,0.10);
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+  box-shadow:
+    0 22px 60px rgba(0,0,0,0.45),
+    inset 0 1px 0 rgba(255,255,255,0.06);
+  overflow: hidden;
+}
+
+.book-card-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px 22px;
+  border-bottom: 1px solid rgba(239,223,197,0.08);
+}
+
+.book-badge{
+  display: inline-flex;
+  align-items: center;
+  height: 30px;
+  padding: 0 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 750;
+  letter-spacing: 0.02em;
+  color: rgba(239,223,197,0.88);
+  background: rgba(31,40,49,0.55);
+  border: 1px solid rgba(239,223,197,0.10);
+}
+
+.book-note{
+  font-size: 0.92rem;
+  color: rgba(239,223,197,0.55);
+}
+
+.book-embed{
+  padding: 18px;
+}
+
+.book-embed-placeholder{
+  height: 720px;
+  border-radius: 18px;
+  border: 1px dashed rgba(239,223,197,0.18);
+  background: rgba(0,0,0,0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(239,223,197,0.55);
+  font-weight: 650;
+  letter-spacing: 0.01em;
+}
+
+/* mobile */
+@media (max-width: 700px){
+  .book-hero{ padding: 120px 0 70px; }
+  .book-card-top{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .book-embed-placeholder{ height: 640px; }
+}
+
